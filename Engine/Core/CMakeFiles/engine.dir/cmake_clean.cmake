@@ -6,7 +6,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/engine.dir/Mesh.cpp.o"
   "CMakeFiles/engine.dir/Quark.cpp.o"
   "CMakeFiles/engine.dir/QuarkGame.cpp.o"
-  "CMakeFiles/engine.dir/Sense.cpp.o"
+  "CMakeFiles/engine.dir/Scene.cpp.o"
   "CMakeFiles/engine.dir/Shader.cpp.o"
   "CMakeFiles/engine.dir/Texture.cpp.o"
   "CMakeFiles/engine.dir/glad.c.o"

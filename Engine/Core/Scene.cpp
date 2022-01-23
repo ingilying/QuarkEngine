@@ -1,18 +1,18 @@
-#include "Sense.h"
+#include "Scene.h"
 #include "Mesh.h"
 #include "Actor.h"
 
-Sense::Sense() : name("default"),items()
+Scene::Scene() : name("default"),items()
 {
 
 }
 
-Sense::Sense(std::string name) : name(name),items()
+Scene::Scene(std::string name) : name(name),items()
 {
     
 }
 
-Sense::~Sense()
+Scene::~Scene()
 {
     for(auto i : items)
     {
@@ -22,14 +22,14 @@ Sense::~Sense()
 }
 
 
-void Sense::AddItem(Quark* actor)
+void Scene::AddItem(Quark* actor)
 {
     if(actor==nullptr)
         Print("警告:加入的Quark为nullptr");
     items.push_back(actor);
 }
 
-void Sense::DeleteItem(Quark* actor)
+void Scene::DeleteItem(Quark* actor)
 {
     for(auto iter=items.begin();iter!=items.end();++iter)
         if((*iter)==actor)
@@ -38,7 +38,7 @@ void Sense::DeleteItem(Quark* actor)
         }
 }
 
-void Sense::Render()
+void Scene::Render()
 {
     for(Quark* i : items)
     {
@@ -51,7 +51,7 @@ void Sense::Render()
     }
 }
 
-void Sense::SetShader(Shader* shader)
+void Scene::SetShader(Shader* shader)
 {
     for(auto i : items)
     {

@@ -23,7 +23,7 @@ set(CMAKE_DEPENDS_CHECK_CXX
   "/home/ingil/code/QuarkEngine/Engine/Core/Mesh.cpp" "/home/ingil/code/QuarkEngine/Engine/build/Core/CMakeFiles/engine.dir/Mesh.cpp.o"
   "/home/ingil/code/QuarkEngine/Engine/Core/Quark.cpp" "/home/ingil/code/QuarkEngine/Engine/build/Core/CMakeFiles/engine.dir/Quark.cpp.o"
   "/home/ingil/code/QuarkEngine/Engine/Core/QuarkGame.cpp" "/home/ingil/code/QuarkEngine/Engine/build/Core/CMakeFiles/engine.dir/QuarkGame.cpp.o"
-  "/home/ingil/code/QuarkEngine/Engine/Core/Sense.cpp" "/home/ingil/code/QuarkEngine/Engine/build/Core/CMakeFiles/engine.dir/Sense.cpp.o"
+  "/home/ingil/code/QuarkEngine/Engine/Core/Scene.cpp" "/home/ingil/code/QuarkEngine/Engine/build/Core/CMakeFiles/engine.dir/Scene.cpp.o"
   "/home/ingil/code/QuarkEngine/Engine/Core/Shader.cpp" "/home/ingil/code/QuarkEngine/Engine/build/Core/CMakeFiles/engine.dir/Shader.cpp.o"
   "/home/ingil/code/QuarkEngine/Engine/Core/Texture.cpp" "/home/ingil/code/QuarkEngine/Engine/build/Core/CMakeFiles/engine.dir/Texture.cpp.o"
   "/home/ingil/code/QuarkEngine/Engine/Core/main.cpp" "/home/ingil/code/QuarkEngine/Engine/build/Core/CMakeFiles/engine.dir/main.cpp.o"

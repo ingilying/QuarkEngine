@@ -4,7 +4,7 @@
 Actor::Actor(Mesh *mesh) : Quark() 
 {
 	//this->mesh = mesh;
-	root=new Sense();
+	root=new Scene();
 	root->AddItem(mesh);
 }
 

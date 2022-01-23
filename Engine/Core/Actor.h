@@ -1,13 +1,13 @@
 #pragma once
 #include "Mesh.h"
 #include "Quark.h"
-#include "Sense.h"
+#include "Scene.h"
 
 class Actor : public Quark
 {
 private:
 	//Mesh* mesh;
-	Sense* root;
+	Scene* root;
 	Shader* shader;
 	bool bTexture;
 public:

@@ -314,32 +314,32 @@ QuarkGame.cpp.s:
 	cd /home/ingil/code/QuarkEngine/Engine/build && $(MAKE) -f Core/CMakeFiles/engine.dir/build.make Core/CMakeFiles/engine.dir/QuarkGame.cpp.s
 .PHONY : QuarkGame.cpp.s
 
-Sense.o: Sense.cpp.o
+Scene.o: Scene.cpp.o
 
-.PHONY : Sense.o
+.PHONY : Scene.o
 
 # target to build an object file
-Sense.cpp.o:
-	cd /home/ingil/code/QuarkEngine/Engine/build && $(MAKE) -f Core/CMakeFiles/engine.dir/build.make Core/CMakeFiles/engine.dir/Sense.cpp.o
-.PHONY : Sense.cpp.o
+Scene.cpp.o:
+	cd /home/ingil/code/QuarkEngine/Engine/build && $(MAKE) -f Core/CMakeFiles/engine.dir/build.make Core/CMakeFiles/engine.dir/Scene.cpp.o
+.PHONY : Scene.cpp.o
 
-Sense.i: Sense.cpp.i
+Scene.i: Scene.cpp.i
 
-.PHONY : Sense.i
+.PHONY : Scene.i
 
 # target to preprocess a source file
-Sense.cpp.i:
-	cd /home/ingil/code/QuarkEngine/Engine/build && $(MAKE) -f Core/CMakeFiles/engine.dir/build.make Core/CMakeFiles/engine.dir/Sense.cpp.i
-.PHONY : Sense.cpp.i
+Scene.cpp.i:
+	cd /home/ingil/code/QuarkEngine/Engine/build && $(MAKE) -f Core/CMakeFiles/engine.dir/build.make Core/CMakeFiles/engine.dir/Scene.cpp.i
+.PHONY : Scene.cpp.i
 
-Sense.s: Sense.cpp.s
+Scene.s: Scene.cpp.s
 
-.PHONY : Sense.s
+.PHONY : Scene.s
 
 # target to generate assembly for a file
-Sense.cpp.s:
-	cd /home/ingil/code/QuarkEngine/Engine/build && $(MAKE) -f Core/CMakeFiles/engine.dir/build.make Core/CMakeFiles/engine.dir/Sense.cpp.s
-.PHONY : Sense.cpp.s
+Scene.cpp.s:
+	cd /home/ingil/code/QuarkEngine/Engine/build && $(MAKE) -f Core/CMakeFiles/engine.dir/build.make Core/CMakeFiles/engine.dir/Scene.cpp.s
+.PHONY : Scene.cpp.s
 
 Shader.o: Shader.cpp.o
 
@@ -533,9 +533,9 @@ help:
 	@echo "... QuarkGame.o"
 	@echo "... QuarkGame.i"
 	@echo "... QuarkGame.s"
-	@echo "... Sense.o"
-	@echo "... Sense.i"
-	@echo "... Sense.s"
+	@echo "... Scene.o"
+	@echo "... Scene.i"
+	@echo "... Scene.s"
 	@echo "... Shader.o"
 	@echo "... Shader.i"
 	@echo "... Shader.s"

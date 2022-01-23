@@ -36,8 +36,8 @@
 },
 {
   "directory": "/home/ingil/code/QuarkEngine/Engine/build/Core",
-  "command": "/bin/clang++-10   -I/home/ingil/code/QuarkEngine/Engine/Core/../include -I/home/ingil/glad/include -I/home/ingil/code/QuarkEngine/Engine/Core/.  -g   -std=gnu++17 -o CMakeFiles/engine.dir/Sense.cpp.o -c /home/ingil/code/QuarkEngine/Engine/Core/Sense.cpp",
-  "file": "/home/ingil/code/QuarkEngine/Engine/Core/Sense.cpp"
+  "command": "/bin/clang++-10   -I/home/ingil/code/QuarkEngine/Engine/Core/../include -I/home/ingil/glad/include -I/home/ingil/code/QuarkEngine/Engine/Core/.  -g   -std=gnu++17 -o CMakeFiles/engine.dir/Scene.cpp.o -c /home/ingil/code/QuarkEngine/Engine/Core/Scene.cpp",
+  "file": "/home/ingil/code/QuarkEngine/Engine/Core/Scene.cpp"
 },
 {
   "directory": "/home/ingil/code/QuarkEngine/Engine/build/Core",

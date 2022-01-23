@@ -5,14 +5,14 @@
 #include "Shader.h"
 #include "untils.h"
 
-class Sense{
+class Scene{
 
 public:
     std::string name;
     std::vector<Quark*> items;
-    Sense();
-    Sense(std::string name);
-    ~Sense();
+    Scene();
+    Scene(std::string name);
+    ~Scene();
     void AddItem(Quark* actor);
     void DeleteItem(Quark* actor);
     void SetShader(Shader* shader);

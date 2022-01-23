@@ -148,18 +148,18 @@ CMakeFiles/engine.dir/QuarkGame.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/engine.dir/QuarkGame.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ingil/code/QuarkEngine/Engine/Core/QuarkGame.cpp -o CMakeFiles/engine.dir/QuarkGame.cpp.s
 
-CMakeFiles/engine.dir/Sense.cpp.o: CMakeFiles/engine.dir/flags.make
-CMakeFiles/engine.dir/Sense.cpp.o: Sense.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ingil/code/QuarkEngine/Engine/Core/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/engine.dir/Sense.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/engine.dir/Sense.cpp.o -c /home/ingil/code/QuarkEngine/Engine/Core/Sense.cpp
+CMakeFiles/engine.dir/Scene.cpp.o: CMakeFiles/engine.dir/flags.make
+CMakeFiles/engine.dir/Scene.cpp.o: Scene.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ingil/code/QuarkEngine/Engine/Core/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/engine.dir/Scene.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/engine.dir/Scene.cpp.o -c /home/ingil/code/QuarkEngine/Engine/Core/Scene.cpp
 
-CMakeFiles/engine.dir/Sense.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/engine.dir/Sense.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ingil/code/QuarkEngine/Engine/Core/Sense.cpp > CMakeFiles/engine.dir/Sense.cpp.i
+CMakeFiles/engine.dir/Scene.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/engine.dir/Scene.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ingil/code/QuarkEngine/Engine/Core/Scene.cpp > CMakeFiles/engine.dir/Scene.cpp.i
 
-CMakeFiles/engine.dir/Sense.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/engine.dir/Sense.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ingil/code/QuarkEngine/Engine/Core/Sense.cpp -o CMakeFiles/engine.dir/Sense.cpp.s
+CMakeFiles/engine.dir/Scene.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/engine.dir/Scene.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ingil/code/QuarkEngine/Engine/Core/Scene.cpp -o CMakeFiles/engine.dir/Scene.cpp.s
 
 CMakeFiles/engine.dir/Shader.cpp.o: CMakeFiles/engine.dir/flags.make
 CMakeFiles/engine.dir/Shader.cpp.o: Shader.cpp
@@ -248,7 +248,7 @@ engine_OBJECTS = \
 "CMakeFiles/engine.dir/Mesh.cpp.o" \
 "CMakeFiles/engine.dir/Quark.cpp.o" \
 "CMakeFiles/engine.dir/QuarkGame.cpp.o" \
-"CMakeFiles/engine.dir/Sense.cpp.o" \
+"CMakeFiles/engine.dir/Scene.cpp.o" \
 "CMakeFiles/engine.dir/Shader.cpp.o" \
 "CMakeFiles/engine.dir/Texture.cpp.o" \
 "CMakeFiles/engine.dir/glad.c.o" \
@@ -266,7 +266,7 @@ engine: CMakeFiles/engine.dir/KeyBoradSystem.cpp.o
 engine: CMakeFiles/engine.dir/Mesh.cpp.o
 engine: CMakeFiles/engine.dir/Quark.cpp.o
 engine: CMakeFiles/engine.dir/QuarkGame.cpp.o
-engine: CMakeFiles/engine.dir/Sense.cpp.o
+engine: CMakeFiles/engine.dir/Scene.cpp.o
 engine: CMakeFiles/engine.dir/Shader.cpp.o
 engine: CMakeFiles/engine.dir/Texture.cpp.o
 engine: CMakeFiles/engine.dir/glad.c.o

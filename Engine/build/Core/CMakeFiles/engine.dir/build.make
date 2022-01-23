@@ -148,18 +148,18 @@ Core/CMakeFiles/engine.dir/QuarkGame.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/engine.dir/QuarkGame.cpp.s"
 	cd /home/ingil/code/QuarkEngine/Engine/build/Core && /bin/clang++-10 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ingil/code/QuarkEngine/Engine/Core/QuarkGame.cpp -o CMakeFiles/engine.dir/QuarkGame.cpp.s
 
-Core/CMakeFiles/engine.dir/Sense.cpp.o: Core/CMakeFiles/engine.dir/flags.make
-Core/CMakeFiles/engine.dir/Sense.cpp.o: ../Core/Sense.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ingil/code/QuarkEngine/Engine/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object Core/CMakeFiles/engine.dir/Sense.cpp.o"
-	cd /home/ingil/code/QuarkEngine/Engine/build/Core && /bin/clang++-10  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/engine.dir/Sense.cpp.o -c /home/ingil/code/QuarkEngine/Engine/Core/Sense.cpp
+Core/CMakeFiles/engine.dir/Scene.cpp.o: Core/CMakeFiles/engine.dir/flags.make
+Core/CMakeFiles/engine.dir/Scene.cpp.o: ../Core/Scene.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ingil/code/QuarkEngine/Engine/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object Core/CMakeFiles/engine.dir/Scene.cpp.o"
+	cd /home/ingil/code/QuarkEngine/Engine/build/Core && /bin/clang++-10  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/engine.dir/Scene.cpp.o -c /home/ingil/code/QuarkEngine/Engine/Core/Scene.cpp
 
-Core/CMakeFiles/engine.dir/Sense.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/engine.dir/Sense.cpp.i"
-	cd /home/ingil/code/QuarkEngine/Engine/build/Core && /bin/clang++-10 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ingil/code/QuarkEngine/Engine/Core/Sense.cpp > CMakeFiles/engine.dir/Sense.cpp.i
+Core/CMakeFiles/engine.dir/Scene.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/engine.dir/Scene.cpp.i"
+	cd /home/ingil/code/QuarkEngine/Engine/build/Core && /bin/clang++-10 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ingil/code/QuarkEngine/Engine/Core/Scene.cpp > CMakeFiles/engine.dir/Scene.cpp.i
 
-Core/CMakeFiles/engine.dir/Sense.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/engine.dir/Sense.cpp.s"
-	cd /home/ingil/code/QuarkEngine/Engine/build/Core && /bin/clang++-10 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ingil/code/QuarkEngine/Engine/Core/Sense.cpp -o CMakeFiles/engine.dir/Sense.cpp.s
+Core/CMakeFiles/engine.dir/Scene.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/engine.dir/Scene.cpp.s"
+	cd /home/ingil/code/QuarkEngine/Engine/build/Core && /bin/clang++-10 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ingil/code/QuarkEngine/Engine/Core/Scene.cpp -o CMakeFiles/engine.dir/Scene.cpp.s
 
 Core/CMakeFiles/engine.dir/Shader.cpp.o: Core/CMakeFiles/engine.dir/flags.make
 Core/CMakeFiles/engine.dir/Shader.cpp.o: ../Core/Shader.cpp
@@ -248,7 +248,7 @@ engine_OBJECTS = \
 "CMakeFiles/engine.dir/Mesh.cpp.o" \
 "CMakeFiles/engine.dir/Quark.cpp.o" \
 "CMakeFiles/engine.dir/QuarkGame.cpp.o" \
-"CMakeFiles/engine.dir/Sense.cpp.o" \
+"CMakeFiles/engine.dir/Scene.cpp.o" \
 "CMakeFiles/engine.dir/Shader.cpp.o" \
 "CMakeFiles/engine.dir/Texture.cpp.o" \
 "CMakeFiles/engine.dir/glad.c.o" \
@@ -266,7 +266,7 @@ Core/engine: Core/CMakeFiles/engine.dir/KeyBoradSystem.cpp.o
 Core/engine: Core/CMakeFiles/engine.dir/Mesh.cpp.o
 Core/engine: Core/CMakeFiles/engine.dir/Quark.cpp.o
 Core/engine: Core/CMakeFiles/engine.dir/QuarkGame.cpp.o
-Core/engine: Core/CMakeFiles/engine.dir/Sense.cpp.o
+Core/engine: Core/CMakeFiles/engine.dir/Scene.cpp.o
 Core/engine: Core/CMakeFiles/engine.dir/Shader.cpp.o
 Core/engine: Core/CMakeFiles/engine.dir/Texture.cpp.o
 Core/engine: Core/CMakeFiles/engine.dir/glad.c.o

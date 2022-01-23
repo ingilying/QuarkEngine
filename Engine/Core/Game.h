@@ -5,7 +5,7 @@
 #include <string>
 #include "Shader.h"
 #include "untils.h"
-#include "Sense.h"
+#include "Scene.h"
 #include "Camera.h"
 #include "KeyBoradSystem.h"
 
@@ -24,7 +24,7 @@ public:
     float deltaTime,lastTime;
     //bool is_click;
     Shader* shader;
-    Sense root;
+    Scene root;
     Camera cam;
     Game(string name,int width,int height);
     void Init();
