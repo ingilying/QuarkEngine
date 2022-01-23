@@ -1,0 +1,3 @@
+/home/ingil/code/QuarkEngine/Engine/Core/CMakeFiles/rebuild_cache.dir
+/home/ingil/code/QuarkEngine/Engine/Core/CMakeFiles/edit_cache.dir
+/home/ingil/code/QuarkEngine/Engine/Core/CMakeFiles/engine.dir

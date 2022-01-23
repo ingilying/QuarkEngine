@@ -1,0 +1,10 @@
+^H:\PROJECT\QUARKENGINE\ENGINE\BUILD\CMAKEFILES\6338A89BF2C6E181806B14AA492A48FF\GENERATE.STAMP.RULE
+setlocal
+"D:\Program Files\CMake\bin\cmake.exe" -SH:/Project/QuarkEngine/Engine -BH:/Project/QuarkEngine/Engine/build --check-stamp-list CMakeFiles/generate.stamp.list --vs-solution-file H:/Project/QuarkEngine/Engine/build/QuarkEngine.sln
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd

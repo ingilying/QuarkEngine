@@ -1,0 +1,5 @@
+# CMake generation dependency list for this directory.
+D:/Program Files/CMake/share/cmake-3.22/Modules/FindOpenGL.cmake
+D:/Program Files/CMake/share/cmake-3.22/Modules/FindPackageHandleStandardArgs.cmake
+D:/Program Files/CMake/share/cmake-3.22/Modules/FindPackageMessage.cmake
+H:/Project/QuarkEngine/Engine/Core/CMakeLists.txt
