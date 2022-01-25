@@ -211,7 +211,7 @@ CMakeFiles/engine.dir/Actor.cpp.o
  /home/ingil/code/QuarkEngine/Engine/Core/Actor.h
  /home/ingil/code/QuarkEngine/Engine/Core/Mesh.h
  /home/ingil/code/QuarkEngine/Engine/Core/Quark.h
- /home/ingil/code/QuarkEngine/Engine/Core/Sense.h
+ /home/ingil/code/QuarkEngine/Engine/Core/Scene.h
  /home/ingil/code/QuarkEngine/Engine/Core/Shader.h
  /home/ingil/code/QuarkEngine/Engine/Core/Texture.h
  /home/ingil/code/QuarkEngine/Engine/Core/untils.h
@@ -616,7 +616,7 @@ CMakeFiles/engine.dir/Game.cpp.o
  /home/ingil/code/QuarkEngine/Engine/Core/Game.h
  /home/ingil/code/QuarkEngine/Engine/Core/KeyBoradSystem.h
  /home/ingil/code/QuarkEngine/Engine/Core/Quark.h
- /home/ingil/code/QuarkEngine/Engine/Core/Sense.h
+ /home/ingil/code/QuarkEngine/Engine/Core/Scene.h
  /home/ingil/code/QuarkEngine/Engine/Core/Shader.h
  /home/ingil/code/QuarkEngine/Engine/Core/untils.h
  /home/ingil/glad/include/KHR/khrplatform.h
@@ -1198,13 +1198,13 @@ CMakeFiles/engine.dir/QuarkGame.cpp.o
  /home/ingil/code/QuarkEngine/Engine/Core/Quark.h
  /home/ingil/code/QuarkEngine/Engine/Core/QuarkGame.cpp
  /home/ingil/code/QuarkEngine/Engine/Core/QuarkGame.h
- /home/ingil/code/QuarkEngine/Engine/Core/Sense.h
+ /home/ingil/code/QuarkEngine/Engine/Core/Scene.h
  /home/ingil/code/QuarkEngine/Engine/Core/Shader.h
  /home/ingil/code/QuarkEngine/Engine/Core/Texture.h
  /home/ingil/code/QuarkEngine/Engine/Core/untils.h
  /home/ingil/glad/include/KHR/khrplatform.h
  /home/ingil/glad/include/glad/glad.h
-CMakeFiles/engine.dir/Sense.cpp.o
+CMakeFiles/engine.dir/Scene.cpp.o
  ../include/glm/common.hpp
  ../include/glm/detail/_fixes.hpp
  ../include/glm/detail/_swizzle.hpp
@@ -1409,8 +1409,8 @@ CMakeFiles/engine.dir/Sense.cpp.o
  /home/ingil/code/QuarkEngine/Engine/Core/Actor.h
  /home/ingil/code/QuarkEngine/Engine/Core/Mesh.h
  /home/ingil/code/QuarkEngine/Engine/Core/Quark.h
- /home/ingil/code/QuarkEngine/Engine/Core/Sense.cpp
- /home/ingil/code/QuarkEngine/Engine/Core/Sense.h
+ /home/ingil/code/QuarkEngine/Engine/Core/Scene.cpp
+ /home/ingil/code/QuarkEngine/Engine/Core/Scene.h
  /home/ingil/code/QuarkEngine/Engine/Core/Shader.h
  /home/ingil/code/QuarkEngine/Engine/Core/Texture.h
  /home/ingil/code/QuarkEngine/Engine/Core/untils.h
@@ -1990,7 +1990,7 @@ CMakeFiles/engine.dir/main.cpp.o
  /home/ingil/code/QuarkEngine/Engine/Core/Mesh.h
  /home/ingil/code/QuarkEngine/Engine/Core/Quark.h
  /home/ingil/code/QuarkEngine/Engine/Core/QuarkGame.h
- /home/ingil/code/QuarkEngine/Engine/Core/Sense.h
+ /home/ingil/code/QuarkEngine/Engine/Core/Scene.h
  /home/ingil/code/QuarkEngine/Engine/Core/Shader.h
  /home/ingil/code/QuarkEngine/Engine/Core/Texture.h
  /home/ingil/code/QuarkEngine/Engine/Core/main.cpp

@@ -3,7 +3,7 @@
 
 Camera::Camera() : Quark() 
 {
-    this->SetPosition(glm::vec3(0.0f,0.0f,3.0f));
+    this->SetPosition(glm::vec3(0.0f,0.0f,0.0f));
     CamFront=glm::vec3(0.0f,0.0f,-1.0f);
     CamUp=glm::vec3(0.0f,1.0f,0.0f);
     direction=glm::quat(0,0,0,-1);
@@ -22,6 +22,10 @@ void Camera::Update()
     glm::quat reveDirec=glm::conjugate(direction);
     glm::mat4 roat=glm::mat4_cast(reveDirec);
     glm::mat4 translation=glm::translate(glm::mat4(1.0),-position);
+
+   // glm::quat qPitch=glm::angleAxis(Pitc)
+
+
     view=roat * translation;
 }
 
@@ -29,7 +33,7 @@ void Camera::UpdateData()
 {
     glm::quat x=glm::angleAxis(glm::radians(UpAngle),glm::vec3(1,0,0));
     glm::quat y=glm::angleAxis(glm::radians(-RightAngle),glm::vec3(0,1,0));
-    direction=x*y;
+    direction=y*x;
 }
 
 
@@ -39,35 +43,36 @@ void Camera::KeyInput(bool keys[])
     glm::quat qua=direction * glm::quat(0,0,0,-1) * glm::conjugate(direction);
     CamFront=glm::vec3(qua.x,qua.y,qua.z);
     CamRight=glm::normalize(glm::cross(CamFront,CamUp));
+    float realSpeed=deltaTime*Speed;
     //CamRight=
     if (keys[GLFW_KEY_W])
 	{
-        position+=Speed*deltaTime*CamFront;
+        position+=CamFront * realSpeed;
 		return;
 	}
 	if (keys[GLFW_KEY_S])
 	{
-		position-=Speed*deltaTime*CamFront;
+		position-=CamFront * realSpeed;
 		return;
 	}
 	if (keys[GLFW_KEY_A])
 	{
-		position-=CamRight*Speed*deltaTime;
+		position-=CamRight * realSpeed;
 		return;
 	}
 	if (keys[GLFW_KEY_D])
 	{
-		position+=CamRight * Speed * deltaTime;
+		position+=CamRight * realSpeed;
 		return;
 	}
     if(keys[GLFW_KEY_SPACE])
     {
-        position+=CamUp * Speed * deltaTime;
+        position+=CamUp * realSpeed;
         return;
     }
     if(keys[GLFW_KEY_LEFT_SHIFT])
     {
-        position-=CamUp * Speed * deltaTime;
+        position-=CamUp * realSpeed;
     }
 }
 

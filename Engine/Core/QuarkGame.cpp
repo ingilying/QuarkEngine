@@ -36,7 +36,7 @@ void QuarkGame::Begin()
 	triangle = new Actor(mesh);
 	Actor *block=new Actor(block_mesh);
 	block->SetPosition(glm::vec3(0.5f,0.3f,0.0f));
-	triangle->SetPosition(glm::vec3(0.1f, 1.0f, 0.0f));
+	triangle->SetPosition(glm::vec3(5.1f, 3.0f, 0.0f));
 	cam.SetPosition(glm::vec3(0.1f,1.0f,0.0f));
 	triangle->SetScale(0.1f);
 	triangle->EnableTexture(true);
@@ -45,7 +45,7 @@ void QuarkGame::Begin()
 	root.AddItem(block);
 	shader->SetBool("bColor",false);
 	//KeyBoradSystem::BindKeyEvent(this,&QuarkGame::KeyInputEvent);
-	cam.SetSpeed(2.0f);
+	cam.SetSpeed(3.0f);
 	cam.SetSenstity(0.05f);
 	KeyBoradSystem::BindKeyEvent(std::bind(&QuarkGame::KeyInputEvent,this,PLACEHOLIDERS_3));
 }
@@ -84,9 +84,9 @@ void QuarkGame::KeyInputEvent(int key,int mod,int action)
 	{
 		Actor* tr=(Actor*)(*root.items.begin());
 		glm::vec3 scale=tr->GetScale()+glm::vec3(0.1f,0.1f,0.1f);
-		cout<<"Scale: X: "<<scale.x<<" Y: "<<scale.y<<" Z: "<<scale.z<<endl;
+		//cout<<"Scale: X: "<<scale.x<<" Y: "<<scale.y<<" Z: "<<scale.z<<endl;
 		tr->SetScale(scale);
-		Print("放大0.1");
+		//Print("放大0.1");
 		return;
 	}
 	if(key==GLFW_KEY_DOWN && (action==GLFW_PRESS || action==GLFW_REPEAT))
