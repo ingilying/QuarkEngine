@@ -1,0 +1,13 @@
+build/*
+*.o
+.*.swp
+cscope.out
+cscope.in.out
+cscope.po.out
+*.sublime-workspace
+*.creator
+*.creator.user
+.idea
+cmake-build-*/
+.DS_Store
+.vscode
