@@ -49,14 +49,20 @@ void Game::Init()
     glfwSetCursorPosCallback(window,[](GLFWwindow *window,double xpos,double ypos){
         Game* game=(Game*)(glfwGetWindowUserPointer(window));
         if(game!=nullptr)
-            game->MouseInput(xpos,ypos);
+            MouseSystem::CallEvent(xpos,ypos);
     });
-    KeyBoradSystem::BindKeyLoopEvent(std::bind(&Camera::KeyInput,&cam,placeholders::_1));
+    //KeyBoradSystem::BindKeyLoopEvent(std::bind(&Camera::KeyInput,&cam,placeholders::_1));
 }
 
 void Game::Begin()
 {
     shader=new Shader("shaders/basic.vs","shaders/basic.fs");
+    //character=new FPSCharacter();
+  //  root.AddItem(character);
+    //FPSCharacter *fps=(FPSCharacter*)character;
+    //fps->InitLastMouseXY(width/2,height/2);
+    //KeyBoradSystem::BindKeyLoopEvent(std::bind(&FPSCharacter::KeyInput,fps,placeholders::_1));
+    //MouseSystem::BindEvent(std::bind(&FPSCharacter::MouseInput,fps,placeholders::_1,placeholders::_2));
 }
 
 void Game::FrameBufferSizeChange(GLFWwindow* window,int width,int height)
@@ -69,9 +75,9 @@ void Game::FrameBufferSizeChange(GLFWwindow* window,int width,int height)
 
 void Game::MouseInput(double xpos,double ypos)
 {
-    cam.MouseInput(xpos-lastx,lasty-ypos);
-    lastx=xpos;
-    lasty=ypos;
+    // cam.MouseInput(xpos-lastx,lasty-ypos);
+    // lastx=xpos;
+    // lasty=ypos;
 }
 
 
@@ -83,17 +89,26 @@ void Game::ProcessInputEvent(GLFWwindow* window,int key,int scancode,int action,
 
 void Game::Loop()
 {
+    
     shader->SetBool("bTexture",false);
     while (!glfwWindowShouldClose(window))
 	{
         float currentTime=glfwGetTime();
         deltaTime=currentTime-lastTime;
         lastTime=currentTime;
-        cam.SetDeltaTime(deltaTime);
+       // character->SetDeltaTime(deltaTime);
         KeyBoradSystem::CallKeyLoopEvent();
-        cam.Update();
+        root.Update(deltaTime);
         Update();
-		glm::mat4 view = cam.view;
+       // character->Render();
+       glm::mat4 view = glm::mat4(1.0f);
+        if(camera!=nullptr)
+        {
+            camera->Update();
+            camera->Render();
+            view=camera->view;
+        }
+        //view=character->camera->view;
 		glm::mat4 projection = glm::mat4(1.0f);
 		projection = glm::perspective(glm::radians(45.0f), (float)width / (float)height, 0.1f, 100.0f);
 		view = glm::translate(view, glm::vec3(0.0f, 0.0f, -5.6f));
@@ -123,6 +138,8 @@ void Game::Free()
 {
     //delete shader;
     //delete window;
+    if(camera!=nullptr)  
+        delete camera;
     glfwTerminate();
 }
 

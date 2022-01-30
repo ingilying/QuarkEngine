@@ -8,6 +8,11 @@ Actor::Actor(Mesh *mesh) : Quark()
 	root->AddItem(mesh);
 }
 
+Actor::Actor() : Quark()
+{
+	root=new Scene();
+}
+
 void Actor::Render()
 {
 	for(auto i : root->items)
@@ -17,6 +22,17 @@ void Actor::Render()
 		i->Render();
 	}
 }
+
+void Actor::Update(float deltaTime)
+{
+	for (auto i : root->items)
+	{
+		if(Actor *j=dynamic_cast<Actor*>(i))
+			j->Update(deltaTime);
+	}
+	
+}
+
 
 void Actor::SetShader(Shader* shader)
 {

@@ -179,6 +179,33 @@ Camera.cpp.s:
 	cd /home/ingil/code/QuarkEngine/Engine/build && $(MAKE) -f Core/CMakeFiles/engine.dir/build.make Core/CMakeFiles/engine.dir/Camera.cpp.s
 .PHONY : Camera.cpp.s
 
+FPSCharacter.o: FPSCharacter.cpp.o
+
+.PHONY : FPSCharacter.o
+
+# target to build an object file
+FPSCharacter.cpp.o:
+	cd /home/ingil/code/QuarkEngine/Engine/build && $(MAKE) -f Core/CMakeFiles/engine.dir/build.make Core/CMakeFiles/engine.dir/FPSCharacter.cpp.o
+.PHONY : FPSCharacter.cpp.o
+
+FPSCharacter.i: FPSCharacter.cpp.i
+
+.PHONY : FPSCharacter.i
+
+# target to preprocess a source file
+FPSCharacter.cpp.i:
+	cd /home/ingil/code/QuarkEngine/Engine/build && $(MAKE) -f Core/CMakeFiles/engine.dir/build.make Core/CMakeFiles/engine.dir/FPSCharacter.cpp.i
+.PHONY : FPSCharacter.cpp.i
+
+FPSCharacter.s: FPSCharacter.cpp.s
+
+.PHONY : FPSCharacter.s
+
+# target to generate assembly for a file
+FPSCharacter.cpp.s:
+	cd /home/ingil/code/QuarkEngine/Engine/build && $(MAKE) -f Core/CMakeFiles/engine.dir/build.make Core/CMakeFiles/engine.dir/FPSCharacter.cpp.s
+.PHONY : FPSCharacter.cpp.s
+
 Game.o: Game.cpp.o
 
 .PHONY : Game.o
@@ -206,32 +233,59 @@ Game.cpp.s:
 	cd /home/ingil/code/QuarkEngine/Engine/build && $(MAKE) -f Core/CMakeFiles/engine.dir/build.make Core/CMakeFiles/engine.dir/Game.cpp.s
 .PHONY : Game.cpp.s
 
-KeyBoradSystem.o: KeyBoradSystem.cpp.o
+Input/KeyBoradSystem.o: Input/KeyBoradSystem.cpp.o
 
-.PHONY : KeyBoradSystem.o
+.PHONY : Input/KeyBoradSystem.o
 
 # target to build an object file
-KeyBoradSystem.cpp.o:
-	cd /home/ingil/code/QuarkEngine/Engine/build && $(MAKE) -f Core/CMakeFiles/engine.dir/build.make Core/CMakeFiles/engine.dir/KeyBoradSystem.cpp.o
-.PHONY : KeyBoradSystem.cpp.o
+Input/KeyBoradSystem.cpp.o:
+	cd /home/ingil/code/QuarkEngine/Engine/build && $(MAKE) -f Core/CMakeFiles/engine.dir/build.make Core/CMakeFiles/engine.dir/Input/KeyBoradSystem.cpp.o
+.PHONY : Input/KeyBoradSystem.cpp.o
 
-KeyBoradSystem.i: KeyBoradSystem.cpp.i
+Input/KeyBoradSystem.i: Input/KeyBoradSystem.cpp.i
 
-.PHONY : KeyBoradSystem.i
+.PHONY : Input/KeyBoradSystem.i
 
 # target to preprocess a source file
-KeyBoradSystem.cpp.i:
-	cd /home/ingil/code/QuarkEngine/Engine/build && $(MAKE) -f Core/CMakeFiles/engine.dir/build.make Core/CMakeFiles/engine.dir/KeyBoradSystem.cpp.i
-.PHONY : KeyBoradSystem.cpp.i
+Input/KeyBoradSystem.cpp.i:
+	cd /home/ingil/code/QuarkEngine/Engine/build && $(MAKE) -f Core/CMakeFiles/engine.dir/build.make Core/CMakeFiles/engine.dir/Input/KeyBoradSystem.cpp.i
+.PHONY : Input/KeyBoradSystem.cpp.i
 
-KeyBoradSystem.s: KeyBoradSystem.cpp.s
+Input/KeyBoradSystem.s: Input/KeyBoradSystem.cpp.s
 
-.PHONY : KeyBoradSystem.s
+.PHONY : Input/KeyBoradSystem.s
 
 # target to generate assembly for a file
-KeyBoradSystem.cpp.s:
-	cd /home/ingil/code/QuarkEngine/Engine/build && $(MAKE) -f Core/CMakeFiles/engine.dir/build.make Core/CMakeFiles/engine.dir/KeyBoradSystem.cpp.s
-.PHONY : KeyBoradSystem.cpp.s
+Input/KeyBoradSystem.cpp.s:
+	cd /home/ingil/code/QuarkEngine/Engine/build && $(MAKE) -f Core/CMakeFiles/engine.dir/build.make Core/CMakeFiles/engine.dir/Input/KeyBoradSystem.cpp.s
+.PHONY : Input/KeyBoradSystem.cpp.s
+
+Input/MouseSystem.o: Input/MouseSystem.cpp.o
+
+.PHONY : Input/MouseSystem.o
+
+# target to build an object file
+Input/MouseSystem.cpp.o:
+	cd /home/ingil/code/QuarkEngine/Engine/build && $(MAKE) -f Core/CMakeFiles/engine.dir/build.make Core/CMakeFiles/engine.dir/Input/MouseSystem.cpp.o
+.PHONY : Input/MouseSystem.cpp.o
+
+Input/MouseSystem.i: Input/MouseSystem.cpp.i
+
+.PHONY : Input/MouseSystem.i
+
+# target to preprocess a source file
+Input/MouseSystem.cpp.i:
+	cd /home/ingil/code/QuarkEngine/Engine/build && $(MAKE) -f Core/CMakeFiles/engine.dir/build.make Core/CMakeFiles/engine.dir/Input/MouseSystem.cpp.i
+.PHONY : Input/MouseSystem.cpp.i
+
+Input/MouseSystem.s: Input/MouseSystem.cpp.s
+
+.PHONY : Input/MouseSystem.s
+
+# target to generate assembly for a file
+Input/MouseSystem.cpp.s:
+	cd /home/ingil/code/QuarkEngine/Engine/build && $(MAKE) -f Core/CMakeFiles/engine.dir/build.make Core/CMakeFiles/engine.dir/Input/MouseSystem.cpp.s
+.PHONY : Input/MouseSystem.cpp.s
 
 Mesh.o: Mesh.cpp.o
 
@@ -518,12 +572,18 @@ help:
 	@echo "... Camera.o"
 	@echo "... Camera.i"
 	@echo "... Camera.s"
+	@echo "... FPSCharacter.o"
+	@echo "... FPSCharacter.i"
+	@echo "... FPSCharacter.s"
 	@echo "... Game.o"
 	@echo "... Game.i"
 	@echo "... Game.s"
-	@echo "... KeyBoradSystem.o"
-	@echo "... KeyBoradSystem.i"
-	@echo "... KeyBoradSystem.s"
+	@echo "... Input/KeyBoradSystem.o"
+	@echo "... Input/KeyBoradSystem.i"
+	@echo "... Input/KeyBoradSystem.s"
+	@echo "... Input/MouseSystem.o"
+	@echo "... Input/MouseSystem.i"
+	@echo "... Input/MouseSystem.s"
 	@echo "... Mesh.o"
 	@echo "... Mesh.i"
 	@echo "... Mesh.s"

@@ -3,15 +3,15 @@
 
 # compile C with /usr/bin/cc
 # compile CXX with /usr/bin/c++
-C_FLAGS = -g  
+C_FLAGS =  
 
 C_DEFINES = 
 
-C_INCLUDES = -I/home/ingil/code/QuarkEngine/Engine/Core/../include -I/home/ingil/glad/include -I/home/ingil/code/QuarkEngine/Engine/Core/. 
+C_INCLUDES = -I/home/ingil/code/QuarkEngine/Engine/Core/../include -I/home/ingil/glad/include 
 
-CXX_FLAGS = -g   -std=gnu++17
+CXX_FLAGS =   -std=gnu++17
 
 CXX_DEFINES = 
 
-CXX_INCLUDES = -I/home/ingil/code/QuarkEngine/Engine/Core/../include -I/home/ingil/glad/include -I/home/ingil/code/QuarkEngine/Engine/Core/. 
+CXX_INCLUDES = -I/home/ingil/code/QuarkEngine/Engine/Core/../include -I/home/ingil/glad/include 
 

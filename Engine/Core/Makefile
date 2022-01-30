@@ -48,10 +48,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/ingil/code/QuarkEngine/Engine/Core
+CMAKE_SOURCE_DIR = /home/ingil/code/QuarkEngine/Engine
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/ingil/code/QuarkEngine/Engine/Core
+CMAKE_BINARY_DIR = /home/ingil/code/QuarkEngine/Engine
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -80,14 +80,14 @@ edit_cache/fast: edit_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/ingil/code/QuarkEngine/Engine/Core/CMakeFiles /home/ingil/code/QuarkEngine/Engine/Core/CMakeFiles/progress.marks
-	$(MAKE) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/ingil/code/QuarkEngine/Engine/Core/CMakeFiles 0
+	cd /home/ingil/code/QuarkEngine/Engine && $(CMAKE_COMMAND) -E cmake_progress_start /home/ingil/code/QuarkEngine/Engine/CMakeFiles /home/ingil/code/QuarkEngine/Engine/Core/CMakeFiles/progress.marks
+	cd /home/ingil/code/QuarkEngine/Engine && $(MAKE) -f CMakeFiles/Makefile2 Core/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ingil/code/QuarkEngine/Engine/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	$(MAKE) -f CMakeFiles/Makefile2 clean
+	cd /home/ingil/code/QuarkEngine/Engine && $(MAKE) -f CMakeFiles/Makefile2 Core/clean
 .PHONY : clean
 
 # The main clean target
@@ -97,30 +97,32 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	$(MAKE) -f CMakeFiles/Makefile2 preinstall
+	cd /home/ingil/code/QuarkEngine/Engine && $(MAKE) -f CMakeFiles/Makefile2 Core/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	$(MAKE) -f CMakeFiles/Makefile2 preinstall
+	cd /home/ingil/code/QuarkEngine/Engine && $(MAKE) -f CMakeFiles/Makefile2 Core/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	$(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /home/ingil/code/QuarkEngine/Engine && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
-#=============================================================================
-# Target rules for targets named engine
+# Convenience name for target.
+Core/CMakeFiles/engine.dir/rule:
+	cd /home/ingil/code/QuarkEngine/Engine && $(MAKE) -f CMakeFiles/Makefile2 Core/CMakeFiles/engine.dir/rule
+.PHONY : Core/CMakeFiles/engine.dir/rule
 
-# Build rule for target.
-engine: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 engine
+# Convenience name for target.
+engine: Core/CMakeFiles/engine.dir/rule
+
 .PHONY : engine
 
 # fast build rule for target.
 engine/fast:
-	$(MAKE) -f CMakeFiles/engine.dir/build.make CMakeFiles/engine.dir/build
+	cd /home/ingil/code/QuarkEngine/Engine && $(MAKE) -f Core/CMakeFiles/engine.dir/build.make Core/CMakeFiles/engine.dir/build
 .PHONY : engine/fast
 
 Actor.o: Actor.cpp.o
@@ -129,7 +131,7 @@ Actor.o: Actor.cpp.o
 
 # target to build an object file
 Actor.cpp.o:
-	$(MAKE) -f CMakeFiles/engine.dir/build.make CMakeFiles/engine.dir/Actor.cpp.o
+	cd /home/ingil/code/QuarkEngine/Engine && $(MAKE) -f Core/CMakeFiles/engine.dir/build.make Core/CMakeFiles/engine.dir/Actor.cpp.o
 .PHONY : Actor.cpp.o
 
 Actor.i: Actor.cpp.i
@@ -138,7 +140,7 @@ Actor.i: Actor.cpp.i
 
 # target to preprocess a source file
 Actor.cpp.i:
-	$(MAKE) -f CMakeFiles/engine.dir/build.make CMakeFiles/engine.dir/Actor.cpp.i
+	cd /home/ingil/code/QuarkEngine/Engine && $(MAKE) -f Core/CMakeFiles/engine.dir/build.make Core/CMakeFiles/engine.dir/Actor.cpp.i
 .PHONY : Actor.cpp.i
 
 Actor.s: Actor.cpp.s
@@ -147,7 +149,7 @@ Actor.s: Actor.cpp.s
 
 # target to generate assembly for a file
 Actor.cpp.s:
-	$(MAKE) -f CMakeFiles/engine.dir/build.make CMakeFiles/engine.dir/Actor.cpp.s
+	cd /home/ingil/code/QuarkEngine/Engine && $(MAKE) -f Core/CMakeFiles/engine.dir/build.make Core/CMakeFiles/engine.dir/Actor.cpp.s
 .PHONY : Actor.cpp.s
 
 Camera.o: Camera.cpp.o
@@ -156,7 +158,7 @@ Camera.o: Camera.cpp.o
 
 # target to build an object file
 Camera.cpp.o:
-	$(MAKE) -f CMakeFiles/engine.dir/build.make CMakeFiles/engine.dir/Camera.cpp.o
+	cd /home/ingil/code/QuarkEngine/Engine && $(MAKE) -f Core/CMakeFiles/engine.dir/build.make Core/CMakeFiles/engine.dir/Camera.cpp.o
 .PHONY : Camera.cpp.o
 
 Camera.i: Camera.cpp.i
@@ -165,7 +167,7 @@ Camera.i: Camera.cpp.i
 
 # target to preprocess a source file
 Camera.cpp.i:
-	$(MAKE) -f CMakeFiles/engine.dir/build.make CMakeFiles/engine.dir/Camera.cpp.i
+	cd /home/ingil/code/QuarkEngine/Engine && $(MAKE) -f Core/CMakeFiles/engine.dir/build.make Core/CMakeFiles/engine.dir/Camera.cpp.i
 .PHONY : Camera.cpp.i
 
 Camera.s: Camera.cpp.s
@@ -174,8 +176,35 @@ Camera.s: Camera.cpp.s
 
 # target to generate assembly for a file
 Camera.cpp.s:
-	$(MAKE) -f CMakeFiles/engine.dir/build.make CMakeFiles/engine.dir/Camera.cpp.s
+	cd /home/ingil/code/QuarkEngine/Engine && $(MAKE) -f Core/CMakeFiles/engine.dir/build.make Core/CMakeFiles/engine.dir/Camera.cpp.s
 .PHONY : Camera.cpp.s
+
+FPSCharacter.o: FPSCharacter.cpp.o
+
+.PHONY : FPSCharacter.o
+
+# target to build an object file
+FPSCharacter.cpp.o:
+	cd /home/ingil/code/QuarkEngine/Engine && $(MAKE) -f Core/CMakeFiles/engine.dir/build.make Core/CMakeFiles/engine.dir/FPSCharacter.cpp.o
+.PHONY : FPSCharacter.cpp.o
+
+FPSCharacter.i: FPSCharacter.cpp.i
+
+.PHONY : FPSCharacter.i
+
+# target to preprocess a source file
+FPSCharacter.cpp.i:
+	cd /home/ingil/code/QuarkEngine/Engine && $(MAKE) -f Core/CMakeFiles/engine.dir/build.make Core/CMakeFiles/engine.dir/FPSCharacter.cpp.i
+.PHONY : FPSCharacter.cpp.i
+
+FPSCharacter.s: FPSCharacter.cpp.s
+
+.PHONY : FPSCharacter.s
+
+# target to generate assembly for a file
+FPSCharacter.cpp.s:
+	cd /home/ingil/code/QuarkEngine/Engine && $(MAKE) -f Core/CMakeFiles/engine.dir/build.make Core/CMakeFiles/engine.dir/FPSCharacter.cpp.s
+.PHONY : FPSCharacter.cpp.s
 
 Game.o: Game.cpp.o
 
@@ -183,7 +212,7 @@ Game.o: Game.cpp.o
 
 # target to build an object file
 Game.cpp.o:
-	$(MAKE) -f CMakeFiles/engine.dir/build.make CMakeFiles/engine.dir/Game.cpp.o
+	cd /home/ingil/code/QuarkEngine/Engine && $(MAKE) -f Core/CMakeFiles/engine.dir/build.make Core/CMakeFiles/engine.dir/Game.cpp.o
 .PHONY : Game.cpp.o
 
 Game.i: Game.cpp.i
@@ -192,7 +221,7 @@ Game.i: Game.cpp.i
 
 # target to preprocess a source file
 Game.cpp.i:
-	$(MAKE) -f CMakeFiles/engine.dir/build.make CMakeFiles/engine.dir/Game.cpp.i
+	cd /home/ingil/code/QuarkEngine/Engine && $(MAKE) -f Core/CMakeFiles/engine.dir/build.make Core/CMakeFiles/engine.dir/Game.cpp.i
 .PHONY : Game.cpp.i
 
 Game.s: Game.cpp.s
@@ -201,35 +230,62 @@ Game.s: Game.cpp.s
 
 # target to generate assembly for a file
 Game.cpp.s:
-	$(MAKE) -f CMakeFiles/engine.dir/build.make CMakeFiles/engine.dir/Game.cpp.s
+	cd /home/ingil/code/QuarkEngine/Engine && $(MAKE) -f Core/CMakeFiles/engine.dir/build.make Core/CMakeFiles/engine.dir/Game.cpp.s
 .PHONY : Game.cpp.s
 
-KeyBoradSystem.o: KeyBoradSystem.cpp.o
+Input/KeyBoradSystem.o: Input/KeyBoradSystem.cpp.o
 
-.PHONY : KeyBoradSystem.o
+.PHONY : Input/KeyBoradSystem.o
 
 # target to build an object file
-KeyBoradSystem.cpp.o:
-	$(MAKE) -f CMakeFiles/engine.dir/build.make CMakeFiles/engine.dir/KeyBoradSystem.cpp.o
-.PHONY : KeyBoradSystem.cpp.o
+Input/KeyBoradSystem.cpp.o:
+	cd /home/ingil/code/QuarkEngine/Engine && $(MAKE) -f Core/CMakeFiles/engine.dir/build.make Core/CMakeFiles/engine.dir/Input/KeyBoradSystem.cpp.o
+.PHONY : Input/KeyBoradSystem.cpp.o
 
-KeyBoradSystem.i: KeyBoradSystem.cpp.i
+Input/KeyBoradSystem.i: Input/KeyBoradSystem.cpp.i
 
-.PHONY : KeyBoradSystem.i
+.PHONY : Input/KeyBoradSystem.i
 
 # target to preprocess a source file
-KeyBoradSystem.cpp.i:
-	$(MAKE) -f CMakeFiles/engine.dir/build.make CMakeFiles/engine.dir/KeyBoradSystem.cpp.i
-.PHONY : KeyBoradSystem.cpp.i
+Input/KeyBoradSystem.cpp.i:
+	cd /home/ingil/code/QuarkEngine/Engine && $(MAKE) -f Core/CMakeFiles/engine.dir/build.make Core/CMakeFiles/engine.dir/Input/KeyBoradSystem.cpp.i
+.PHONY : Input/KeyBoradSystem.cpp.i
 
-KeyBoradSystem.s: KeyBoradSystem.cpp.s
+Input/KeyBoradSystem.s: Input/KeyBoradSystem.cpp.s
 
-.PHONY : KeyBoradSystem.s
+.PHONY : Input/KeyBoradSystem.s
 
 # target to generate assembly for a file
-KeyBoradSystem.cpp.s:
-	$(MAKE) -f CMakeFiles/engine.dir/build.make CMakeFiles/engine.dir/KeyBoradSystem.cpp.s
-.PHONY : KeyBoradSystem.cpp.s
+Input/KeyBoradSystem.cpp.s:
+	cd /home/ingil/code/QuarkEngine/Engine && $(MAKE) -f Core/CMakeFiles/engine.dir/build.make Core/CMakeFiles/engine.dir/Input/KeyBoradSystem.cpp.s
+.PHONY : Input/KeyBoradSystem.cpp.s
+
+Input/MouseSystem.o: Input/MouseSystem.cpp.o
+
+.PHONY : Input/MouseSystem.o
+
+# target to build an object file
+Input/MouseSystem.cpp.o:
+	cd /home/ingil/code/QuarkEngine/Engine && $(MAKE) -f Core/CMakeFiles/engine.dir/build.make Core/CMakeFiles/engine.dir/Input/MouseSystem.cpp.o
+.PHONY : Input/MouseSystem.cpp.o
+
+Input/MouseSystem.i: Input/MouseSystem.cpp.i
+
+.PHONY : Input/MouseSystem.i
+
+# target to preprocess a source file
+Input/MouseSystem.cpp.i:
+	cd /home/ingil/code/QuarkEngine/Engine && $(MAKE) -f Core/CMakeFiles/engine.dir/build.make Core/CMakeFiles/engine.dir/Input/MouseSystem.cpp.i
+.PHONY : Input/MouseSystem.cpp.i
+
+Input/MouseSystem.s: Input/MouseSystem.cpp.s
+
+.PHONY : Input/MouseSystem.s
+
+# target to generate assembly for a file
+Input/MouseSystem.cpp.s:
+	cd /home/ingil/code/QuarkEngine/Engine && $(MAKE) -f Core/CMakeFiles/engine.dir/build.make Core/CMakeFiles/engine.dir/Input/MouseSystem.cpp.s
+.PHONY : Input/MouseSystem.cpp.s
 
 Mesh.o: Mesh.cpp.o
 
@@ -237,7 +293,7 @@ Mesh.o: Mesh.cpp.o
 
 # target to build an object file
 Mesh.cpp.o:
-	$(MAKE) -f CMakeFiles/engine.dir/build.make CMakeFiles/engine.dir/Mesh.cpp.o
+	cd /home/ingil/code/QuarkEngine/Engine && $(MAKE) -f Core/CMakeFiles/engine.dir/build.make Core/CMakeFiles/engine.dir/Mesh.cpp.o
 .PHONY : Mesh.cpp.o
 
 Mesh.i: Mesh.cpp.i
@@ -246,7 +302,7 @@ Mesh.i: Mesh.cpp.i
 
 # target to preprocess a source file
 Mesh.cpp.i:
-	$(MAKE) -f CMakeFiles/engine.dir/build.make CMakeFiles/engine.dir/Mesh.cpp.i
+	cd /home/ingil/code/QuarkEngine/Engine && $(MAKE) -f Core/CMakeFiles/engine.dir/build.make Core/CMakeFiles/engine.dir/Mesh.cpp.i
 .PHONY : Mesh.cpp.i
 
 Mesh.s: Mesh.cpp.s
@@ -255,7 +311,7 @@ Mesh.s: Mesh.cpp.s
 
 # target to generate assembly for a file
 Mesh.cpp.s:
-	$(MAKE) -f CMakeFiles/engine.dir/build.make CMakeFiles/engine.dir/Mesh.cpp.s
+	cd /home/ingil/code/QuarkEngine/Engine && $(MAKE) -f Core/CMakeFiles/engine.dir/build.make Core/CMakeFiles/engine.dir/Mesh.cpp.s
 .PHONY : Mesh.cpp.s
 
 Quark.o: Quark.cpp.o
@@ -264,7 +320,7 @@ Quark.o: Quark.cpp.o
 
 # target to build an object file
 Quark.cpp.o:
-	$(MAKE) -f CMakeFiles/engine.dir/build.make CMakeFiles/engine.dir/Quark.cpp.o
+	cd /home/ingil/code/QuarkEngine/Engine && $(MAKE) -f Core/CMakeFiles/engine.dir/build.make Core/CMakeFiles/engine.dir/Quark.cpp.o
 .PHONY : Quark.cpp.o
 
 Quark.i: Quark.cpp.i
@@ -273,7 +329,7 @@ Quark.i: Quark.cpp.i
 
 # target to preprocess a source file
 Quark.cpp.i:
-	$(MAKE) -f CMakeFiles/engine.dir/build.make CMakeFiles/engine.dir/Quark.cpp.i
+	cd /home/ingil/code/QuarkEngine/Engine && $(MAKE) -f Core/CMakeFiles/engine.dir/build.make Core/CMakeFiles/engine.dir/Quark.cpp.i
 .PHONY : Quark.cpp.i
 
 Quark.s: Quark.cpp.s
@@ -282,7 +338,7 @@ Quark.s: Quark.cpp.s
 
 # target to generate assembly for a file
 Quark.cpp.s:
-	$(MAKE) -f CMakeFiles/engine.dir/build.make CMakeFiles/engine.dir/Quark.cpp.s
+	cd /home/ingil/code/QuarkEngine/Engine && $(MAKE) -f Core/CMakeFiles/engine.dir/build.make Core/CMakeFiles/engine.dir/Quark.cpp.s
 .PHONY : Quark.cpp.s
 
 QuarkGame.o: QuarkGame.cpp.o
@@ -291,7 +347,7 @@ QuarkGame.o: QuarkGame.cpp.o
 
 # target to build an object file
 QuarkGame.cpp.o:
-	$(MAKE) -f CMakeFiles/engine.dir/build.make CMakeFiles/engine.dir/QuarkGame.cpp.o
+	cd /home/ingil/code/QuarkEngine/Engine && $(MAKE) -f Core/CMakeFiles/engine.dir/build.make Core/CMakeFiles/engine.dir/QuarkGame.cpp.o
 .PHONY : QuarkGame.cpp.o
 
 QuarkGame.i: QuarkGame.cpp.i
@@ -300,7 +356,7 @@ QuarkGame.i: QuarkGame.cpp.i
 
 # target to preprocess a source file
 QuarkGame.cpp.i:
-	$(MAKE) -f CMakeFiles/engine.dir/build.make CMakeFiles/engine.dir/QuarkGame.cpp.i
+	cd /home/ingil/code/QuarkEngine/Engine && $(MAKE) -f Core/CMakeFiles/engine.dir/build.make Core/CMakeFiles/engine.dir/QuarkGame.cpp.i
 .PHONY : QuarkGame.cpp.i
 
 QuarkGame.s: QuarkGame.cpp.s
@@ -309,7 +365,7 @@ QuarkGame.s: QuarkGame.cpp.s
 
 # target to generate assembly for a file
 QuarkGame.cpp.s:
-	$(MAKE) -f CMakeFiles/engine.dir/build.make CMakeFiles/engine.dir/QuarkGame.cpp.s
+	cd /home/ingil/code/QuarkEngine/Engine && $(MAKE) -f Core/CMakeFiles/engine.dir/build.make Core/CMakeFiles/engine.dir/QuarkGame.cpp.s
 .PHONY : QuarkGame.cpp.s
 
 Scene.o: Scene.cpp.o
@@ -318,7 +374,7 @@ Scene.o: Scene.cpp.o
 
 # target to build an object file
 Scene.cpp.o:
-	$(MAKE) -f CMakeFiles/engine.dir/build.make CMakeFiles/engine.dir/Scene.cpp.o
+	cd /home/ingil/code/QuarkEngine/Engine && $(MAKE) -f Core/CMakeFiles/engine.dir/build.make Core/CMakeFiles/engine.dir/Scene.cpp.o
 .PHONY : Scene.cpp.o
 
 Scene.i: Scene.cpp.i
@@ -327,7 +383,7 @@ Scene.i: Scene.cpp.i
 
 # target to preprocess a source file
 Scene.cpp.i:
-	$(MAKE) -f CMakeFiles/engine.dir/build.make CMakeFiles/engine.dir/Scene.cpp.i
+	cd /home/ingil/code/QuarkEngine/Engine && $(MAKE) -f Core/CMakeFiles/engine.dir/build.make Core/CMakeFiles/engine.dir/Scene.cpp.i
 .PHONY : Scene.cpp.i
 
 Scene.s: Scene.cpp.s
@@ -336,7 +392,7 @@ Scene.s: Scene.cpp.s
 
 # target to generate assembly for a file
 Scene.cpp.s:
-	$(MAKE) -f CMakeFiles/engine.dir/build.make CMakeFiles/engine.dir/Scene.cpp.s
+	cd /home/ingil/code/QuarkEngine/Engine && $(MAKE) -f Core/CMakeFiles/engine.dir/build.make Core/CMakeFiles/engine.dir/Scene.cpp.s
 .PHONY : Scene.cpp.s
 
 Shader.o: Shader.cpp.o
@@ -345,7 +401,7 @@ Shader.o: Shader.cpp.o
 
 # target to build an object file
 Shader.cpp.o:
-	$(MAKE) -f CMakeFiles/engine.dir/build.make CMakeFiles/engine.dir/Shader.cpp.o
+	cd /home/ingil/code/QuarkEngine/Engine && $(MAKE) -f Core/CMakeFiles/engine.dir/build.make Core/CMakeFiles/engine.dir/Shader.cpp.o
 .PHONY : Shader.cpp.o
 
 Shader.i: Shader.cpp.i
@@ -354,7 +410,7 @@ Shader.i: Shader.cpp.i
 
 # target to preprocess a source file
 Shader.cpp.i:
-	$(MAKE) -f CMakeFiles/engine.dir/build.make CMakeFiles/engine.dir/Shader.cpp.i
+	cd /home/ingil/code/QuarkEngine/Engine && $(MAKE) -f Core/CMakeFiles/engine.dir/build.make Core/CMakeFiles/engine.dir/Shader.cpp.i
 .PHONY : Shader.cpp.i
 
 Shader.s: Shader.cpp.s
@@ -363,7 +419,7 @@ Shader.s: Shader.cpp.s
 
 # target to generate assembly for a file
 Shader.cpp.s:
-	$(MAKE) -f CMakeFiles/engine.dir/build.make CMakeFiles/engine.dir/Shader.cpp.s
+	cd /home/ingil/code/QuarkEngine/Engine && $(MAKE) -f Core/CMakeFiles/engine.dir/build.make Core/CMakeFiles/engine.dir/Shader.cpp.s
 .PHONY : Shader.cpp.s
 
 Texture.o: Texture.cpp.o
@@ -372,7 +428,7 @@ Texture.o: Texture.cpp.o
 
 # target to build an object file
 Texture.cpp.o:
-	$(MAKE) -f CMakeFiles/engine.dir/build.make CMakeFiles/engine.dir/Texture.cpp.o
+	cd /home/ingil/code/QuarkEngine/Engine && $(MAKE) -f Core/CMakeFiles/engine.dir/build.make Core/CMakeFiles/engine.dir/Texture.cpp.o
 .PHONY : Texture.cpp.o
 
 Texture.i: Texture.cpp.i
@@ -381,7 +437,7 @@ Texture.i: Texture.cpp.i
 
 # target to preprocess a source file
 Texture.cpp.i:
-	$(MAKE) -f CMakeFiles/engine.dir/build.make CMakeFiles/engine.dir/Texture.cpp.i
+	cd /home/ingil/code/QuarkEngine/Engine && $(MAKE) -f Core/CMakeFiles/engine.dir/build.make Core/CMakeFiles/engine.dir/Texture.cpp.i
 .PHONY : Texture.cpp.i
 
 Texture.s: Texture.cpp.s
@@ -390,7 +446,7 @@ Texture.s: Texture.cpp.s
 
 # target to generate assembly for a file
 Texture.cpp.s:
-	$(MAKE) -f CMakeFiles/engine.dir/build.make CMakeFiles/engine.dir/Texture.cpp.s
+	cd /home/ingil/code/QuarkEngine/Engine && $(MAKE) -f Core/CMakeFiles/engine.dir/build.make Core/CMakeFiles/engine.dir/Texture.cpp.s
 .PHONY : Texture.cpp.s
 
 glad.o: glad.c.o
@@ -399,7 +455,7 @@ glad.o: glad.c.o
 
 # target to build an object file
 glad.c.o:
-	$(MAKE) -f CMakeFiles/engine.dir/build.make CMakeFiles/engine.dir/glad.c.o
+	cd /home/ingil/code/QuarkEngine/Engine && $(MAKE) -f Core/CMakeFiles/engine.dir/build.make Core/CMakeFiles/engine.dir/glad.c.o
 .PHONY : glad.c.o
 
 glad.i: glad.c.i
@@ -408,7 +464,7 @@ glad.i: glad.c.i
 
 # target to preprocess a source file
 glad.c.i:
-	$(MAKE) -f CMakeFiles/engine.dir/build.make CMakeFiles/engine.dir/glad.c.i
+	cd /home/ingil/code/QuarkEngine/Engine && $(MAKE) -f Core/CMakeFiles/engine.dir/build.make Core/CMakeFiles/engine.dir/glad.c.i
 .PHONY : glad.c.i
 
 glad.s: glad.c.s
@@ -417,7 +473,7 @@ glad.s: glad.c.s
 
 # target to generate assembly for a file
 glad.c.s:
-	$(MAKE) -f CMakeFiles/engine.dir/build.make CMakeFiles/engine.dir/glad.c.s
+	cd /home/ingil/code/QuarkEngine/Engine && $(MAKE) -f Core/CMakeFiles/engine.dir/build.make Core/CMakeFiles/engine.dir/glad.c.s
 .PHONY : glad.c.s
 
 main.o: main.cpp.o
@@ -426,7 +482,7 @@ main.o: main.cpp.o
 
 # target to build an object file
 main.cpp.o:
-	$(MAKE) -f CMakeFiles/engine.dir/build.make CMakeFiles/engine.dir/main.cpp.o
+	cd /home/ingil/code/QuarkEngine/Engine && $(MAKE) -f Core/CMakeFiles/engine.dir/build.make Core/CMakeFiles/engine.dir/main.cpp.o
 .PHONY : main.cpp.o
 
 main.i: main.cpp.i
@@ -435,7 +491,7 @@ main.i: main.cpp.i
 
 # target to preprocess a source file
 main.cpp.i:
-	$(MAKE) -f CMakeFiles/engine.dir/build.make CMakeFiles/engine.dir/main.cpp.i
+	cd /home/ingil/code/QuarkEngine/Engine && $(MAKE) -f Core/CMakeFiles/engine.dir/build.make Core/CMakeFiles/engine.dir/main.cpp.i
 .PHONY : main.cpp.i
 
 main.s: main.cpp.s
@@ -444,7 +500,7 @@ main.s: main.cpp.s
 
 # target to generate assembly for a file
 main.cpp.s:
-	$(MAKE) -f CMakeFiles/engine.dir/build.make CMakeFiles/engine.dir/main.cpp.s
+	cd /home/ingil/code/QuarkEngine/Engine && $(MAKE) -f Core/CMakeFiles/engine.dir/build.make Core/CMakeFiles/engine.dir/main.cpp.s
 .PHONY : main.cpp.s
 
 untils.o: untils.cpp.o
@@ -453,7 +509,7 @@ untils.o: untils.cpp.o
 
 # target to build an object file
 untils.cpp.o:
-	$(MAKE) -f CMakeFiles/engine.dir/build.make CMakeFiles/engine.dir/untils.cpp.o
+	cd /home/ingil/code/QuarkEngine/Engine && $(MAKE) -f Core/CMakeFiles/engine.dir/build.make Core/CMakeFiles/engine.dir/untils.cpp.o
 .PHONY : untils.cpp.o
 
 untils.i: untils.cpp.i
@@ -462,7 +518,7 @@ untils.i: untils.cpp.i
 
 # target to preprocess a source file
 untils.cpp.i:
-	$(MAKE) -f CMakeFiles/engine.dir/build.make CMakeFiles/engine.dir/untils.cpp.i
+	cd /home/ingil/code/QuarkEngine/Engine && $(MAKE) -f Core/CMakeFiles/engine.dir/build.make Core/CMakeFiles/engine.dir/untils.cpp.i
 .PHONY : untils.cpp.i
 
 untils.s: untils.cpp.s
@@ -471,7 +527,7 @@ untils.s: untils.cpp.s
 
 # target to generate assembly for a file
 untils.cpp.s:
-	$(MAKE) -f CMakeFiles/engine.dir/build.make CMakeFiles/engine.dir/untils.cpp.s
+	cd /home/ingil/code/QuarkEngine/Engine && $(MAKE) -f Core/CMakeFiles/engine.dir/build.make Core/CMakeFiles/engine.dir/untils.cpp.s
 .PHONY : untils.cpp.s
 
 weight.o: weight.cpp.o
@@ -480,7 +536,7 @@ weight.o: weight.cpp.o
 
 # target to build an object file
 weight.cpp.o:
-	$(MAKE) -f CMakeFiles/engine.dir/build.make CMakeFiles/engine.dir/weight.cpp.o
+	cd /home/ingil/code/QuarkEngine/Engine && $(MAKE) -f Core/CMakeFiles/engine.dir/build.make Core/CMakeFiles/engine.dir/weight.cpp.o
 .PHONY : weight.cpp.o
 
 weight.i: weight.cpp.i
@@ -489,7 +545,7 @@ weight.i: weight.cpp.i
 
 # target to preprocess a source file
 weight.cpp.i:
-	$(MAKE) -f CMakeFiles/engine.dir/build.make CMakeFiles/engine.dir/weight.cpp.i
+	cd /home/ingil/code/QuarkEngine/Engine && $(MAKE) -f Core/CMakeFiles/engine.dir/build.make Core/CMakeFiles/engine.dir/weight.cpp.i
 .PHONY : weight.cpp.i
 
 weight.s: weight.cpp.s
@@ -498,7 +554,7 @@ weight.s: weight.cpp.s
 
 # target to generate assembly for a file
 weight.cpp.s:
-	$(MAKE) -f CMakeFiles/engine.dir/build.make CMakeFiles/engine.dir/weight.cpp.s
+	cd /home/ingil/code/QuarkEngine/Engine && $(MAKE) -f Core/CMakeFiles/engine.dir/build.make Core/CMakeFiles/engine.dir/weight.cpp.s
 .PHONY : weight.cpp.s
 
 # Help Target
@@ -516,12 +572,18 @@ help:
 	@echo "... Camera.o"
 	@echo "... Camera.i"
 	@echo "... Camera.s"
+	@echo "... FPSCharacter.o"
+	@echo "... FPSCharacter.i"
+	@echo "... FPSCharacter.s"
 	@echo "... Game.o"
 	@echo "... Game.i"
 	@echo "... Game.s"
-	@echo "... KeyBoradSystem.o"
-	@echo "... KeyBoradSystem.i"
-	@echo "... KeyBoradSystem.s"
+	@echo "... Input/KeyBoradSystem.o"
+	@echo "... Input/KeyBoradSystem.i"
+	@echo "... Input/KeyBoradSystem.s"
+	@echo "... Input/MouseSystem.o"
+	@echo "... Input/MouseSystem.i"
+	@echo "... Input/MouseSystem.s"
 	@echo "... Mesh.o"
 	@echo "... Mesh.i"
 	@echo "... Mesh.s"
@@ -563,6 +625,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	$(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /home/ingil/code/QuarkEngine/Engine && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

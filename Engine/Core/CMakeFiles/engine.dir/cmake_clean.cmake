@@ -1,8 +1,10 @@
 file(REMOVE_RECURSE
   "CMakeFiles/engine.dir/Actor.cpp.o"
   "CMakeFiles/engine.dir/Camera.cpp.o"
+  "CMakeFiles/engine.dir/FPSCharacter.cpp.o"
   "CMakeFiles/engine.dir/Game.cpp.o"
-  "CMakeFiles/engine.dir/KeyBoradSystem.cpp.o"
+  "CMakeFiles/engine.dir/Input/KeyBoradSystem.cpp.o"
+  "CMakeFiles/engine.dir/Input/MouseSystem.cpp.o"
   "CMakeFiles/engine.dir/Mesh.cpp.o"
   "CMakeFiles/engine.dir/Quark.cpp.o"
   "CMakeFiles/engine.dir/QuarkGame.cpp.o"

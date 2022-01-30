@@ -26,6 +26,12 @@ public:
     void SetDeltaTime(float del);
     void SetSpeed(float speed);
     void SetSenstity(float senstity);
-    void KeyInput(bool keys[]);
-    void MouseInput(float xoffest,float yoffest);
+    //void KeyInput(bool keys[]);
+    void AddRoation(float xoffest,float yoffest);
+    void AddForwardMovement();
+    void AddBackwardMovement();
+    void AddLeftMovement();
+    void AddRightMovement();
+    void AddUpMovement();
+    void AddDownMovement();
 };

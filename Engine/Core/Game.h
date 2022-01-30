@@ -7,7 +7,8 @@
 #include "untils.h"
 #include "Scene.h"
 #include "Camera.h"
-#include "KeyBoradSystem.h"
+#include "Input/KeyBoradSystem.h"
+#include "Input/MouseSystem.h"
 
 using namespace std;
 
@@ -25,7 +26,8 @@ public:
     //bool is_click;
     Shader* shader;
     Scene root;
-    Camera cam;
+    Camera* camera;
+   // Character *character;
     Game(string name,int width,int height);
     void Init();
     virtual void Begin();

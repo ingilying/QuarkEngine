@@ -1457,6 +1457,8 @@ Camera.h
 /home/ingil/code/QuarkEngine/Engine/Core/Camera.h
 GLFW/glfw3.h
 /home/ingil/code/QuarkEngine/Engine/Core/GLFW/glfw3.h
+iostream
+-
 
 /home/ingil/code/QuarkEngine/Engine/Core/Camera.h
 Quark.h
@@ -1465,6 +1467,24 @@ glm/gtc/matrix_transform.hpp
 -
 glm/gtc/quaternion.hpp
 -
+
+/home/ingil/code/QuarkEngine/Engine/Core/Character.h
+glm/glm.hpp
+-
+Camera.h
+/home/ingil/code/QuarkEngine/Engine/Core/Camera.h
+Actor.h
+/home/ingil/code/QuarkEngine/Engine/Core/Actor.h
+
+/home/ingil/code/QuarkEngine/Engine/Core/FPSCharacter.cpp
+FPSCharacter.h
+/home/ingil/code/QuarkEngine/Engine/Core/FPSCharacter.h
+
+/home/ingil/code/QuarkEngine/Engine/Core/FPSCharacter.h
+Actor.h
+/home/ingil/code/QuarkEngine/Engine/Core/Actor.h
+Character.h
+/home/ingil/code/QuarkEngine/Engine/Core/Character.h
 
 /home/ingil/code/QuarkEngine/Engine/Core/Game.cpp
 Game.h
@@ -1483,18 +1503,30 @@ untils.h
 /home/ingil/code/QuarkEngine/Engine/Core/untils.h
 Scene.h
 /home/ingil/code/QuarkEngine/Engine/Core/Scene.h
-Camera.h
-/home/ingil/code/QuarkEngine/Engine/Core/Camera.h
-KeyBoradSystem.h
-/home/ingil/code/QuarkEngine/Engine/Core/KeyBoradSystem.h
+FPSCharacter.h
+/home/ingil/code/QuarkEngine/Engine/Core/FPSCharacter.h
+Input/KeyBoradSystem.h
+/home/ingil/code/QuarkEngine/Engine/Core/Input/KeyBoradSystem.h
+Input/MouseSystem.h
+/home/ingil/code/QuarkEngine/Engine/Core/Input/MouseSystem.h
 
-/home/ingil/code/QuarkEngine/Engine/Core/KeyBoradSystem.cpp
+/home/ingil/code/QuarkEngine/Engine/Core/Input/KeyBoradSystem.cpp
 KeyBoradSystem.h
-/home/ingil/code/QuarkEngine/Engine/Core/KeyBoradSystem.h
+/home/ingil/code/QuarkEngine/Engine/Core/Input/KeyBoradSystem.h
 GLFW/glfw3.h
 -
 
-/home/ingil/code/QuarkEngine/Engine/Core/KeyBoradSystem.h
+/home/ingil/code/QuarkEngine/Engine/Core/Input/KeyBoradSystem.h
+vector
+-
+functional
+-
+
+/home/ingil/code/QuarkEngine/Engine/Core/Input/MouseSystem.cpp
+MouseSystem.h
+/home/ingil/code/QuarkEngine/Engine/Core/Input/MouseSystem.h
+
+/home/ingil/code/QuarkEngine/Engine/Core/Input/MouseSystem.h
 vector
 -
 functional
@@ -1557,6 +1589,14 @@ Mesh.h
 /home/ingil/code/QuarkEngine/Engine/Core/Mesh.h
 Shader.h
 /home/ingil/code/QuarkEngine/Engine/Core/Shader.h
+Actor.h
+/home/ingil/code/QuarkEngine/Engine/Core/Actor.h
+
+/home/ingil/code/QuarkEngine/Engine/Core/Scene.cpp
+Scene.h
+/home/ingil/code/QuarkEngine/Engine/Core/Scene.h
+Mesh.h
+/home/ingil/code/QuarkEngine/Engine/Core/Mesh.h
 Actor.h
 /home/ingil/code/QuarkEngine/Engine/Core/Actor.h
 
@@ -1631,6 +1671,8 @@ glm/glm.hpp
 -
 filesystem
 -
+
+/home/ingil/code/QuarkEngine/Engine/Core/weight.cpp
 
 /home/ingil/glad/include/KHR/khrplatform.h
 stdint.h

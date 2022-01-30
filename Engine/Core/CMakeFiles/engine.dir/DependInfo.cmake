@@ -11,15 +11,16 @@ set(CMAKE_C_COMPILER_ID "GNU")
 
 # The include file search paths:
 set(CMAKE_C_TARGET_INCLUDE_PATH
-  "../include"
+  "Core/../include"
   "/home/ingil/glad/include"
-  "."
   )
 set(CMAKE_DEPENDS_CHECK_CXX
   "/home/ingil/code/QuarkEngine/Engine/Core/Actor.cpp" "/home/ingil/code/QuarkEngine/Engine/Core/CMakeFiles/engine.dir/Actor.cpp.o"
   "/home/ingil/code/QuarkEngine/Engine/Core/Camera.cpp" "/home/ingil/code/QuarkEngine/Engine/Core/CMakeFiles/engine.dir/Camera.cpp.o"
+  "/home/ingil/code/QuarkEngine/Engine/Core/FPSCharacter.cpp" "/home/ingil/code/QuarkEngine/Engine/Core/CMakeFiles/engine.dir/FPSCharacter.cpp.o"
   "/home/ingil/code/QuarkEngine/Engine/Core/Game.cpp" "/home/ingil/code/QuarkEngine/Engine/Core/CMakeFiles/engine.dir/Game.cpp.o"
-  "/home/ingil/code/QuarkEngine/Engine/Core/KeyBoradSystem.cpp" "/home/ingil/code/QuarkEngine/Engine/Core/CMakeFiles/engine.dir/KeyBoradSystem.cpp.o"
+  "/home/ingil/code/QuarkEngine/Engine/Core/Input/KeyBoradSystem.cpp" "/home/ingil/code/QuarkEngine/Engine/Core/CMakeFiles/engine.dir/Input/KeyBoradSystem.cpp.o"
+  "/home/ingil/code/QuarkEngine/Engine/Core/Input/MouseSystem.cpp" "/home/ingil/code/QuarkEngine/Engine/Core/CMakeFiles/engine.dir/Input/MouseSystem.cpp.o"
   "/home/ingil/code/QuarkEngine/Engine/Core/Mesh.cpp" "/home/ingil/code/QuarkEngine/Engine/Core/CMakeFiles/engine.dir/Mesh.cpp.o"
   "/home/ingil/code/QuarkEngine/Engine/Core/Quark.cpp" "/home/ingil/code/QuarkEngine/Engine/Core/CMakeFiles/engine.dir/Quark.cpp.o"
   "/home/ingil/code/QuarkEngine/Engine/Core/QuarkGame.cpp" "/home/ingil/code/QuarkEngine/Engine/Core/CMakeFiles/engine.dir/QuarkGame.cpp.o"
@@ -34,9 +35,8 @@ set(CMAKE_CXX_COMPILER_ID "GNU")
 
 # The include file search paths:
 set(CMAKE_CXX_TARGET_INCLUDE_PATH
-  "../include"
+  "Core/../include"
   "/home/ingil/glad/include"
-  "."
   )
 
 # Targets to which this target links.

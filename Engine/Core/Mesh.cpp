@@ -67,7 +67,7 @@ void Mesh::Clean()
 
 void Mesh::Render()
 {
-	glm::mat4 translform=glm::mat4(1.0f);
+		glm::mat4 translform=glm::mat4(1.0f);
 	//std::cout<<GetPosition().x<<" "<<GetPosition().y<<" "<<GetPosition().z<<std::endl;
 	translform = glm::translate(translform, GetPosition());
 	translform = glm::rotate(translform, GetRoation().x, glm::vec3(1.0f, 0.0f, 0.0f));

@@ -1,6 +1,7 @@
 #pragma once
 #include <string>
 #include <glad/glad.h>
+#include "FPSCharacter.h"
 #include <GLFW/glfw3.h>
 //#include <windows.h>
 #include <iostream>
@@ -17,6 +18,7 @@ private:
 	glm::vec3 trpos;
 	Mesh *mesh;
 	Actor *triangle;
+	FPSCharacter *character;
 public:
 	QuarkGame(string name,int width,int height);
 	void Begin();

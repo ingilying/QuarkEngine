@@ -6,3 +6,31 @@
 
 #IncludeRegexTransform: 
 
+/home/ingil/code/QuarkEngine/Engine/Core/glad.c
+stdio.h
+-
+stdlib.h
+-
+string.h
+-
+glad/glad.h
+-
+windows.h
+-
+winapifamily.h
+-
+dlfcn.h
+-
+
+/home/ingil/glad/include/KHR/khrplatform.h
+stdint.h
+-
+inttypes.h
+-
+stdint.h
+-
+
+/home/ingil/glad/include/glad/glad.h
+KHR/khrplatform.h
+-
+

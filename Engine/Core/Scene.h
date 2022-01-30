@@ -17,4 +17,5 @@ public:
     void DeleteItem(Quark* actor);
     void SetShader(Shader* shader);
     void Render();
+    void Update(float deltaTime);
 };

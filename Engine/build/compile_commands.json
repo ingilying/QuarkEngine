@@ -1,72 +1,97 @@
 [
 {
-  "directory": "/home/ingil/code/QuarkEngine/Engine/build/Core",
-  "command": "/bin/clang++-10   -I/home/ingil/code/QuarkEngine/Engine/Core/../include -I/home/ingil/glad/include -I/home/ingil/code/QuarkEngine/Engine/Core/.  -g   -std=gnu++17 -o CMakeFiles/engine.dir/Actor.cpp.o -c /home/ingil/code/QuarkEngine/Engine/Core/Actor.cpp",
+  "directory": "/home/ingil/code/QuarkEngine/Engine/build",
+  "command": "/bin/clang++-10   -I../Core/../include -I/home/ingil/glad/include  -g   -std=gnu++17 -o Core/CMakeFiles/engine.dir/Actor.cpp.o -c /home/ingil/code/QuarkEngine/Engine/Core/Actor.cpp",
   "file": "/home/ingil/code/QuarkEngine/Engine/Core/Actor.cpp"
 },
+
 {
-  "directory": "/home/ingil/code/QuarkEngine/Engine/build/Core",
-  "command": "/bin/clang++-10   -I/home/ingil/code/QuarkEngine/Engine/Core/../include -I/home/ingil/glad/include -I/home/ingil/code/QuarkEngine/Engine/Core/.  -g   -std=gnu++17 -o CMakeFiles/engine.dir/Camera.cpp.o -c /home/ingil/code/QuarkEngine/Engine/Core/Camera.cpp",
+  "directory": "/home/ingil/code/QuarkEngine/Engine/build",
+  "command": "/bin/clang++-10   -I../Core/../include -I/home/ingil/glad/include  -g   -std=gnu++17 -o Core/CMakeFiles/engine.dir/Camera.cpp.o -c /home/ingil/code/QuarkEngine/Engine/Core/Camera.cpp",
   "file": "/home/ingil/code/QuarkEngine/Engine/Core/Camera.cpp"
 },
+
 {
-  "directory": "/home/ingil/code/QuarkEngine/Engine/build/Core",
-  "command": "/bin/clang++-10   -I/home/ingil/code/QuarkEngine/Engine/Core/../include -I/home/ingil/glad/include -I/home/ingil/code/QuarkEngine/Engine/Core/.  -g   -std=gnu++17 -o CMakeFiles/engine.dir/Game.cpp.o -c /home/ingil/code/QuarkEngine/Engine/Core/Game.cpp",
+  "directory": "/home/ingil/code/QuarkEngine/Engine/build",
+  "command": "/bin/clang++-10   -I../Core/../include -I/home/ingil/glad/include  -g   -std=gnu++17 -o Core/CMakeFiles/engine.dir/FPSCharacter.cpp.o -c /home/ingil/code/QuarkEngine/Engine/Core/FPSCharacter.cpp",
+  "file": "/home/ingil/code/QuarkEngine/Engine/Core/FPSCharacter.cpp"
+},
+
+{
+  "directory": "/home/ingil/code/QuarkEngine/Engine/build",
+  "command": "/bin/clang++-10   -I../Core/../include -I/home/ingil/glad/include  -g   -std=gnu++17 -o Core/CMakeFiles/engine.dir/Game.cpp.o -c /home/ingil/code/QuarkEngine/Engine/Core/Game.cpp",
   "file": "/home/ingil/code/QuarkEngine/Engine/Core/Game.cpp"
 },
+
 {
-  "directory": "/home/ingil/code/QuarkEngine/Engine/build/Core",
-  "command": "/bin/clang++-10   -I/home/ingil/code/QuarkEngine/Engine/Core/../include -I/home/ingil/glad/include -I/home/ingil/code/QuarkEngine/Engine/Core/.  -g   -std=gnu++17 -o CMakeFiles/engine.dir/KeyBoradSystem.cpp.o -c /home/ingil/code/QuarkEngine/Engine/Core/KeyBoradSystem.cpp",
-  "file": "/home/ingil/code/QuarkEngine/Engine/Core/KeyBoradSystem.cpp"
-},
-{
-  "directory": "/home/ingil/code/QuarkEngine/Engine/build/Core",
-  "command": "/bin/clang++-10   -I/home/ingil/code/QuarkEngine/Engine/Core/../include -I/home/ingil/glad/include -I/home/ingil/code/QuarkEngine/Engine/Core/.  -g   -std=gnu++17 -o CMakeFiles/engine.dir/Mesh.cpp.o -c /home/ingil/code/QuarkEngine/Engine/Core/Mesh.cpp",
+  "directory": "/home/ingil/code/QuarkEngine/Engine/build",
+  "command": "/bin/clang++-10   -I../Core/../include -I/home/ingil/glad/include  -g   -std=gnu++17 -o Core/CMakeFiles/engine.dir/Mesh.cpp.o -c /home/ingil/code/QuarkEngine/Engine/Core/Mesh.cpp",
   "file": "/home/ingil/code/QuarkEngine/Engine/Core/Mesh.cpp"
 },
+
 {
-  "directory": "/home/ingil/code/QuarkEngine/Engine/build/Core",
-  "command": "/bin/clang++-10   -I/home/ingil/code/QuarkEngine/Engine/Core/../include -I/home/ingil/glad/include -I/home/ingil/code/QuarkEngine/Engine/Core/.  -g   -std=gnu++17 -o CMakeFiles/engine.dir/Quark.cpp.o -c /home/ingil/code/QuarkEngine/Engine/Core/Quark.cpp",
+  "directory": "/home/ingil/code/QuarkEngine/Engine/build",
+  "command": "/bin/clang++-10   -I../Core/../include -I/home/ingil/glad/include  -g   -std=gnu++17 -o Core/CMakeFiles/engine.dir/Quark.cpp.o -c /home/ingil/code/QuarkEngine/Engine/Core/Quark.cpp",
   "file": "/home/ingil/code/QuarkEngine/Engine/Core/Quark.cpp"
 },
+
 {
-  "directory": "/home/ingil/code/QuarkEngine/Engine/build/Core",
-  "command": "/bin/clang++-10   -I/home/ingil/code/QuarkEngine/Engine/Core/../include -I/home/ingil/glad/include -I/home/ingil/code/QuarkEngine/Engine/Core/.  -g   -std=gnu++17 -o CMakeFiles/engine.dir/QuarkGame.cpp.o -c /home/ingil/code/QuarkEngine/Engine/Core/QuarkGame.cpp",
+  "directory": "/home/ingil/code/QuarkEngine/Engine/build",
+  "command": "/bin/clang++-10   -I../Core/../include -I/home/ingil/glad/include  -g   -std=gnu++17 -o Core/CMakeFiles/engine.dir/QuarkGame.cpp.o -c /home/ingil/code/QuarkEngine/Engine/Core/QuarkGame.cpp",
   "file": "/home/ingil/code/QuarkEngine/Engine/Core/QuarkGame.cpp"
 },
+
 {
-  "directory": "/home/ingil/code/QuarkEngine/Engine/build/Core",
-  "command": "/bin/clang++-10   -I/home/ingil/code/QuarkEngine/Engine/Core/../include -I/home/ingil/glad/include -I/home/ingil/code/QuarkEngine/Engine/Core/.  -g   -std=gnu++17 -o CMakeFiles/engine.dir/Scene.cpp.o -c /home/ingil/code/QuarkEngine/Engine/Core/Scene.cpp",
+  "directory": "/home/ingil/code/QuarkEngine/Engine/build",
+  "command": "/bin/clang++-10   -I../Core/../include -I/home/ingil/glad/include  -g   -std=gnu++17 -o Core/CMakeFiles/engine.dir/Scene.cpp.o -c /home/ingil/code/QuarkEngine/Engine/Core/Scene.cpp",
   "file": "/home/ingil/code/QuarkEngine/Engine/Core/Scene.cpp"
 },
+
 {
-  "directory": "/home/ingil/code/QuarkEngine/Engine/build/Core",
-  "command": "/bin/clang++-10   -I/home/ingil/code/QuarkEngine/Engine/Core/../include -I/home/ingil/glad/include -I/home/ingil/code/QuarkEngine/Engine/Core/.  -g   -std=gnu++17 -o CMakeFiles/engine.dir/Shader.cpp.o -c /home/ingil/code/QuarkEngine/Engine/Core/Shader.cpp",
+  "directory": "/home/ingil/code/QuarkEngine/Engine/build",
+  "command": "/bin/clang++-10   -I../Core/../include -I/home/ingil/glad/include  -g   -std=gnu++17 -o Core/CMakeFiles/engine.dir/Shader.cpp.o -c /home/ingil/code/QuarkEngine/Engine/Core/Shader.cpp",
   "file": "/home/ingil/code/QuarkEngine/Engine/Core/Shader.cpp"
 },
+
 {
-  "directory": "/home/ingil/code/QuarkEngine/Engine/build/Core",
-  "command": "/bin/clang++-10   -I/home/ingil/code/QuarkEngine/Engine/Core/../include -I/home/ingil/glad/include -I/home/ingil/code/QuarkEngine/Engine/Core/.  -g   -std=gnu++17 -o CMakeFiles/engine.dir/Texture.cpp.o -c /home/ingil/code/QuarkEngine/Engine/Core/Texture.cpp",
+  "directory": "/home/ingil/code/QuarkEngine/Engine/build",
+  "command": "/bin/clang++-10   -I../Core/../include -I/home/ingil/glad/include  -g   -std=gnu++17 -o Core/CMakeFiles/engine.dir/Texture.cpp.o -c /home/ingil/code/QuarkEngine/Engine/Core/Texture.cpp",
   "file": "/home/ingil/code/QuarkEngine/Engine/Core/Texture.cpp"
 },
+
 {
-  "directory": "/home/ingil/code/QuarkEngine/Engine/build/Core",
-  "command": "/bin/clang-10  -I/home/ingil/code/QuarkEngine/Engine/Core/../include -I/home/ingil/glad/include -I/home/ingil/code/QuarkEngine/Engine/Core/.  -g   -o CMakeFiles/engine.dir/glad.c.o   -c /home/ingil/code/QuarkEngine/Engine/Core/glad.c",
+  "directory": "/home/ingil/code/QuarkEngine/Engine/build",
+  "command": "/bin/clang-10  -I../Core/../include -I/home/ingil/glad/include  -g   -o Core/CMakeFiles/engine.dir/glad.c.o   -c /home/ingil/code/QuarkEngine/Engine/Core/glad.c",
   "file": "/home/ingil/code/QuarkEngine/Engine/Core/glad.c"
 },
+
 {
-  "directory": "/home/ingil/code/QuarkEngine/Engine/build/Core",
-  "command": "/bin/clang++-10   -I/home/ingil/code/QuarkEngine/Engine/Core/../include -I/home/ingil/glad/include -I/home/ingil/code/QuarkEngine/Engine/Core/.  -g   -std=gnu++17 -o CMakeFiles/engine.dir/main.cpp.o -c /home/ingil/code/QuarkEngine/Engine/Core/main.cpp",
+  "directory": "/home/ingil/code/QuarkEngine/Engine/build",
+  "command": "/bin/clang++-10   -I../Core/../include -I/home/ingil/glad/include  -g   -std=gnu++17 -o Core/CMakeFiles/engine.dir/main.cpp.o -c /home/ingil/code/QuarkEngine/Engine/Core/main.cpp",
   "file": "/home/ingil/code/QuarkEngine/Engine/Core/main.cpp"
 },
+
 {
-  "directory": "/home/ingil/code/QuarkEngine/Engine/build/Core",
-  "command": "/bin/clang++-10   -I/home/ingil/code/QuarkEngine/Engine/Core/../include -I/home/ingil/glad/include -I/home/ingil/code/QuarkEngine/Engine/Core/.  -g   -std=gnu++17 -o CMakeFiles/engine.dir/untils.cpp.o -c /home/ingil/code/QuarkEngine/Engine/Core/untils.cpp",
+  "directory": "/home/ingil/code/QuarkEngine/Engine/build",
+  "command": "/bin/clang++-10   -I../Core/../include -I/home/ingil/glad/include  -g   -std=gnu++17 -o Core/CMakeFiles/engine.dir/untils.cpp.o -c /home/ingil/code/QuarkEngine/Engine/Core/untils.cpp",
   "file": "/home/ingil/code/QuarkEngine/Engine/Core/untils.cpp"
 },
+
 {
-  "directory": "/home/ingil/code/QuarkEngine/Engine/build/Core",
-  "command": "/bin/clang++-10   -I/home/ingil/code/QuarkEngine/Engine/Core/../include -I/home/ingil/glad/include -I/home/ingil/code/QuarkEngine/Engine/Core/.  -g   -std=gnu++17 -o CMakeFiles/engine.dir/weight.cpp.o -c /home/ingil/code/QuarkEngine/Engine/Core/weight.cpp",
+  "directory": "/home/ingil/code/QuarkEngine/Engine/build",
+  "command": "/bin/clang++-10   -I../Core/../include -I/home/ingil/glad/include  -g   -std=gnu++17 -o Core/CMakeFiles/engine.dir/weight.cpp.o -c /home/ingil/code/QuarkEngine/Engine/Core/weight.cpp",
   "file": "/home/ingil/code/QuarkEngine/Engine/Core/weight.cpp"
+},
+
+{
+  "directory": "/home/ingil/code/QuarkEngine/Engine/build",
+  "command": "/bin/clang++-10   -I../Core/../include -I/home/ingil/glad/include  -g   -std=gnu++17 -o Core/CMakeFiles/engine.dir/Input/KeyBoradSystem.cpp.o -c /home/ingil/code/QuarkEngine/Engine/Core/Input/KeyBoradSystem.cpp",
+  "file": "/home/ingil/code/QuarkEngine/Engine/Core/Input/KeyBoradSystem.cpp"
+},
+
+{
+  "directory": "/home/ingil/code/QuarkEngine/Engine/build",
+  "command": "/bin/clang++-10   -I../Core/../include -I/home/ingil/glad/include  -g   -std=gnu++17 -o Core/CMakeFiles/engine.dir/Input/MouseSystem.cpp.o -c /home/ingil/code/QuarkEngine/Engine/Core/Input/MouseSystem.cpp",
+  "file": "/home/ingil/code/QuarkEngine/Engine/Core/Input/MouseSystem.cpp"
 }
 ]

@@ -12,8 +12,10 @@ private:
 	bool bTexture;
 public:
 	Actor(Mesh *mesh);
+	Actor();
 	~Actor();
 	void Render();
+	virtual void Update(float deltaTime);
 	void SetShader(Shader* shader);
 	void SetPosition(glm::vec3 pos);
 	void SetRoation(glm::vec3 roat);

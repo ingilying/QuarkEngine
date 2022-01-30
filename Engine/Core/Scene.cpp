@@ -51,6 +51,17 @@ void Scene::Render()
     }
 }
 
+void Scene::Update(float deltaTime)
+{
+    for(Quark* i : items)
+    {
+        if(Actor* j=dynamic_cast<Actor*>(i))
+        {
+            j->Update(deltaTime);
+        }
+    }
+}
+
 void Scene::SetShader(Shader* shader)
 {
     for(auto i : items)
